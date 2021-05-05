@@ -1,0 +1,8 @@
+library("DAAG")
+View(carprice)
+stem(carprice$Min.Price, scale=4)
+stem(carprice$Min.Price, scale=2)
+stem(carprice$Max.Price, scale=4)
+stem(carprice$Max.Price, scale=2)
+stem(carprice$Price, scale=4)
+stem(carprice$Price, scale=2)

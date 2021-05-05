@@ -1,0 +1,8 @@
+install.packages("Ecdat")
+library("Ecdat")
+View(Cracker)
+select<-table(Cracker$choice)
+colorcol = c("orange red","gold","sea green","royal blue")
+pct <-round(select/sum(select)*100,2)
+label<-paste(names(select),"\n",pct,"%")
+pie(select, radius =2, col = colorcol, main="크래커 브랜드 선호도", init.angle=90, labels = label,cex.main=2 )
